@@ -1,0 +1,13 @@
+pandas==2.3.1
+scikit-learn==1.6.1
+numpy
+optuna==4.7.0
+catboost==1.2.8
+lightgbm==4.6.0
+xgboost==2.1.4
+torch==2.8.0
+tabpfn==2.1.0
+tabpfn-extensions[interpretability]
+shap
+matplotlib
+seaborn

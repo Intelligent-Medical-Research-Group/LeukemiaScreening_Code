@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+
+data/
+raw_data/
+**/outputs/
+models/
+*.ckpt
+*.pkl
+*.log
+*.csv
+!requirements.txt
