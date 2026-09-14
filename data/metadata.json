@@ -1,0 +1,53 @@
+{
+  "preprocessing": {
+    "imputer": "RFimputer (IterativeImputer)",
+    "scaler": "StandardScaler"
+  },
+  "n_features": 22,
+  "features": [
+    "A/G",
+    "ALB",
+    "APTT",
+    "BASO#",
+    "DBIL",
+    "GLB",
+    "HCT",
+    "LDH",
+    "MCH",
+    "MCHC",
+    "MCV",
+    "MPV",
+    "NEUT#",
+    "PLT",
+    "PTTA",
+    "RBC",
+    "RDW",
+    "TBIL",
+    "UA",
+    "WBC",
+    "年龄",
+    "性别"
+  ],
+  "n_train": 5254,
+  "n_test": 1314,
+  "n_pos_train": 786,
+  "n_neg_train": 4468,
+  "scale_pos_weight": 5.684478371501272,
+  "cv": {
+    "method": "StratifiedGroupKFold",
+    "n_splits": 10,
+    "shuffle": true,
+    "random_state": 42
+  },
+  "gender_encoding": {
+    "男": 1.0,
+    "女": 0.0,
+    "不详/缺失": "NaN → RF impute"
+  },
+  "note": "建模步骤仅使用 train  split；test 已预处理供最终评估",
+  "external": {
+    "Chongqing": "data/external/Chongqing*",
+    "Yichang": "data/external/Yichang*",
+    "note": "外部验证使用 data/external 中的重庆与宜昌数据；中南 train/test 见本目录其余文件"
+  }
+}

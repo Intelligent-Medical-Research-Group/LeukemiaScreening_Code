@@ -1,0 +1,35 @@
+{
+  "center": "Yichang",
+  "n": 2320,
+  "n_pos": 520,
+  "n_neg": 1800,
+  "features": [
+    "A/G",
+    "ALB",
+    "APTT",
+    "BASO#",
+    "DBIL",
+    "GLB",
+    "HCT",
+    "LDH",
+    "MCH",
+    "MCHC",
+    "MCV",
+    "MPV",
+    "NEUT#",
+    "PLT",
+    "PTTA",
+    "RBC",
+    "RDW",
+    "TBIL",
+    "UA",
+    "WBC",
+    "年龄",
+    "性别"
+  ],
+  "files": {
+    "full": "data/external/Yichang.csv",
+    "features": "data/external/Yichang_X.csv",
+    "meta": "data/external/Yichang_meta.csv"
+  }
+}

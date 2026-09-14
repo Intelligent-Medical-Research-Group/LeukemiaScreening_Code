@@ -3,12 +3,11 @@ __pycache__/
 .ipynb_checkpoints/
 .DS_Store
 
-data/
 raw_data/
 **/outputs/
+!step1_preliminary_feature_selection/outputs/
+!step1_preliminary_feature_selection/outputs/**
+
 models/
 *.ckpt
-*.pkl
 *.log
-*.csv
-!requirements.txt

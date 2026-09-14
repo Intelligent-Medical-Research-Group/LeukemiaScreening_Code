@@ -1,0 +1,35 @@
+{
+  "center": "Chongqing",
+  "n": 1260,
+  "n_pos": 360,
+  "n_neg": 900,
+  "features": [
+    "A/G",
+    "ALB",
+    "APTT",
+    "BASO#",
+    "DBIL",
+    "GLB",
+    "HCT",
+    "LDH",
+    "MCH",
+    "MCHC",
+    "MCV",
+    "MPV",
+    "NEUT#",
+    "PLT",
+    "PTTA",
+    "RBC",
+    "RDW",
+    "TBIL",
+    "UA",
+    "WBC",
+    "年龄",
+    "性别"
+  ],
+  "files": {
+    "full": "data/external/Chongqing.csv",
+    "features": "data/external/Chongqing_X.csv",
+    "meta": "data/external/Chongqing_meta.csv"
+  }
+}
