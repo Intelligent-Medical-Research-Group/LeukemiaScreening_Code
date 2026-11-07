@@ -5,22 +5,7 @@ TabPFN pipeline for early identification of leukemia versus non-leukemia using r
 **Interactive demo (research use only, not a diagnostic device):**  
 https://waves-jul-presidential-finances.trycloudflare.com
 
-## Data
-
-Processed tables used by this repository are in `data/`. Hospital identifiers have been replaced with anonymous keys (`P000001`, …). Do not treat these files as a public release of identifiable clinical records.
-
-| Path | Contents |
-|------|----------|
-| `data/features.txt` | 22 candidate features after adding sex to the 21 shared laboratory variables |
-| `data/X_train_rfimput_scaled.csv`, `y_train.csv` | Zhongnan training matrix (RFimput + StandardScaler; n=5254) |
-| `data/X_test_rfimput_scaled.csv`, `y_test.csv` | Zhongnan internal test set (n=1314) |
-| `data/groups_*.csv`, `stratify_*.csv`, `cv_folds.pkl` | Group labels, stratum labels, and the locked 10-fold split |
-| `data/external/Chongqing_*`, `Yichang_*`, `Zhongnan_test_*` | External and internal evaluation tables in the same scaled space |
-| `step1_preliminary_feature_selection/outputs/selected_features.csv` | 21 features retained after LASSO / Elastic Net (MCV removed) |
-
 The locked TabPFN model uses **19 features** (step 2 dropped uric acid and sex). The TabPFN v2 classifier checkpoint is not stored here; set `TABPFN_MODEL_PATH` to a local `tabpfn-v2-classifier.ckpt`, or place that file at `models/tabpfn-v2-classifier.ckpt`.
-
-Raw identifiable extracts belong in `raw_data/` (gitignored). Collaboration under an institutional data-use agreement should go to the corresponding author.
 
 ## Setup
 
